@@ -1,0 +1,91 @@
+body {
+	height: 1700px;
+	padding-top: 83px;
+}
+/*Header*/
+.nav-li {
+	display: inline-block;
+}
+.logo img {
+	height: 80px;
+}
+.logo {
+	float: left;
+}
+.navigation {
+	float: right;
+}
+.header-wraper {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	background-color: red;
+	z-index: 50;
+}
+.header-wraper::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*Second section*/
+.box-wraper {
+	width: 600px;
+	height: 600px;
+	background-color: yellow;
+	position: relative;
+}
+.box:first-child {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+}
+.box:nth-child(2) {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	z-index: 1;
+}
+.box:nth-child(3) {
+	width: 150px;
+	height: 150px;
+	background-color: grey;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	z-index: 3;
+}
+.box p {
+	color: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.text-on-image {
+	position: absolute;
+	top: 50px;
+	right:50px;
+	color: red;
+	font-size: 35px;
+}
+.image-wraper {
+	position: relative;
+	width: 546px;
+}
+.icon-image {
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+/*.image {
+	width: 100%;
+}*/
